@@ -33,5 +33,5 @@ jobs:
       with:
         app-name: 'thmenus'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_501b644acb3741a0b9dfbf4cbe3fd21d }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_6e7f0a9dbca74e71a8cb8ab37edb571b }}
         package: './myapp.zip'
