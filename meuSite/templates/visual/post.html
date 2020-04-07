@@ -1,0 +1,97 @@
+{% extends 'visual/base.html' %}
+{% block title %}Listagem de Posts{% endblock %}
+{% block content %}
+ <div class="container">
+
+  <div class="jumbotron jumbotron-fluid" style="border-radius: 10">
+    <div class="container">
+      <h1 class="display-4">Bem vindo ao estabelecimento virtual!</h1>
+      <p class="lead">Aqui você vai encontrar todo o nosso cardápio e os preços de cada pedacinho da sua felicidade!</p>
+    </div>
+  </div>
+  <div class="row" id="row1">
+
+      <div class="col" style="margin: 15px;">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="https://via.placeholder.com/286x180" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Fogo no parquinho</h5>
+            <p class="card-text">Neste espaço teremos a descrição do post</p>
+            <a href="https://www.google.com" class="btn btn-primary">Ver o post completo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col" style="margin: 15px;">
+        <div class="card" style="width: 18rem;">
+            {%if request.user.is_authenticated %}
+            <div class="admin-actions">
+                <a href="https://www.instagram.com/browniesmaycozinha/" target="_blank">
+                    <span><font color="black">Editar</font></span>
+                </a>
+
+                <a href="https://www.instagram.com/browniesmaycozinha/" target="_blank">
+                    <span><font color="black">Excluir</font></span>
+                </a>
+            </div>
+            {%endif%}
+
+            <img class="card-img-top" src="https://via.placeholder.com/286x180" alt="Card image cap">
+
+            <div class="card-body">
+                <h5 class="card-title">Título do post</h5>
+                <p class="card-text">Neste espaço teremos a descrição do post</p>
+                <a href="#" class="btn btn-primary">Ver o post completo</a>
+            </div>
+        </div>
+
+      </div>
+
+      <div class="col" style="margin: 15px;">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="https://via.placeholder.com/286x180" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Título do post</h5>
+            <p class="card-text">Neste espaço teremos a descrição do post</p>
+            <a href="#" class="btn btn-primary">Ver o post completo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col" style="margin: 15px;">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="https://via.placeholder.com/286x180" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Fogo no parquinho</h5>
+            <p class="card-text">Neste espaço teremos a descrição do post</p>
+            <a href="https://www.google.com" class="btn btn-primary">Ver o post completo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col" style="margin: 15px;">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="https://via.placeholder.com/286x180" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Título do post</h5>
+            <p class="card-text">Neste espaço teremos a descrição do post</p>
+            <a href="#" class="btn btn-primary">Ver o post completo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col" style="margin: 15px;">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="https://via.placeholder.com/286x180" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Título do post</h5>
+            <p class="card-text">Neste espaço teremos a descrição do post</p>
+            <a href="#" class="btn btn-primary">Ver o post completo</a>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+ </div>
+{% endblock %}

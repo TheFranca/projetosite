@@ -1,0 +1,39 @@
+/*
+ * Social Buttons for Bootstrap
+ *
+ * Copyright 2013-2016 Panayiotis Lipiridis
+ * Licensed under the MIT License
+ *
+ * https://github.com/lipis/bootstrap-social
+ */
+
+
+.btn-instagram {
+    color:#000;
+    background-color:#f76700;
+    border-color:rgba(0,0,0,0)
+ }
+
+.btn-instagram:focus,.btn-instagram.focus {
+    color:#000;
+    background-color:#f76700;
+    border-color:rgba(0,0,0,0)
+}
+
+.btn-instagram:hover{color:#fff;background-color:#f76700;border-color:rgba(0,0,0,0)}
+
+.btn-instagram:active,.btn-instagram.active,.open>.dropdown-toggle.btn-instagram{color:#fff;background-color:#f76700;border-color:rgba(0,0,0,0)}.btn-instagram:active:hover,.btn-instagram.active:hover,.open>.dropdown-toggle.btn-instagram:hover,.btn-instagram:active:focus,.btn-instagram.active:focus,.open>.dropdown-toggle.btn-instagram:focus,.btn-instagram:active.focus,.btn-instagram.active.focus,.open>.dropdown-toggle.btn-instagram.focus{color:#fff;background-color:#f76700;border-color:rgba(0,0,0,0)}
+
+.btn-instagram:active,.btn-instagram.active,.open>.dropdown-toggle.btn-instagram{background-image:none}
+
+.btn-instagram.disabled:hover,.btn-instagram[disabled]:hover,fieldset[disabled] .btn-instagram:hover,.btn-instagram.disabled:focus,.btn-instagram[disabled]:focus,fieldset[disabled] .btn-instagram:focus,.btn-instagram.disabled.focus,.btn-instagram[disabled].focus,fieldset[disabled] .btn-instagram.focus{background-color:#f76700;border-color:rgba(0,0,0,0)}
+
+.btn-instagram .badge{color:#f76700;background-color:#fff}
+
+.navbar .nav-item2 {
+    padding: 2px;
+}
+
+
+
+

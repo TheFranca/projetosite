@@ -1,0 +1,83 @@
+<!-- COmentário de uma ou várias linhas -->
+<!-- Pack de botões "edit":     <script src="https://kit.fontawesome.com/81e324cc75.js" crossorigin="anonymous"></script> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'css/bootstrap-social.css' %}" rel="stylesheet">
+
+
+</head>
+<body class="corpo">
+    <nav class="navbar navbar-expand-lg navbar-light">
+
+       <a class="navbar-brand" href="{% url 'post' %}">Blog</a>
+
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+
+       <div class="collapse navbar-collapse" id="navbarNav">
+         <!-- Itens do menu -->
+         <ul class="navbar-nav">
+
+           <li class="nav-item">
+             <a class="nav-link" href="{% url 'about' %}">Sobre nós</a>
+           </li>
+
+           <li class="nav-item">
+             <a class="nav-link" href="{% url 'contact' %}">Contato</a>
+           </li>
+
+         </ul>
+
+        <!-- Colocando os icones -->
+         <ul class="navbar-nav nav-right ml-auto">
+            {%if request.user.is_authenticated %}
+                 <li class="nav-item">
+                     <a class="nav-link" href="{% url 'logout' %}">Sair</a>
+                 </li>
+             {%else%}
+                 <li class="nav-item">
+                     <a class="nav-link" href="{% url 'login' %}">Login</a>
+                 </li>
+             {%endif%}
+
+             <li class="nav-item2">
+                <a class="btn btn-social-icon btn-instagram" href="https://www.instagram.com/browniesmaycozinha/" target="_blank">
+                    <span class="fa fa-instagram fa-lg"></span>
+                </a>
+             </li>
+
+             <li class="nav-item2">
+                <a class="btn btn-social-icon btn-instagram" href="https://www.instagram.com/browniesmaycozinha/" target="_blank">
+                    <span class="fa fa-instagram fa-lg"></span>
+                </a>
+             </li>
+         </ul>
+
+
+       </div>
+     </nav>
+
+    <div class="row">
+        {% block content %}
+        {% endblock %}
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
